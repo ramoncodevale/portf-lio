@@ -1,9 +1,12 @@
+// Modo Dark 
 const check = document.getElementById('check');
 
 check.addEventListener('change', ()=>{
     document.body.classList.toggle('dark')
     link.style.color = 'white'
 })
+
+// Efeito Scroll
 
 window.sr = ScrollReveal({ reset: true});
 
@@ -18,7 +21,6 @@ sr.reveal('.minha-foto',{
     rotate: { x: 100, y: 100, z:0},
     duration: 2000, 
 });
-
 
 sr.reveal('.titulo-sobre-mim',{
     duration: 2000, 
@@ -51,10 +53,21 @@ sr.reveal('.card-habilidades',{
     rotate: { x: 200, y: 100, z:0},
 });
 
+sr.reveal('.container-projetos',{
+    duration: 4000, 
+});
 
-sr.reveal('.card-projeto',{
+sr.reveal('.titulo-projeto',{
     duration: 3000, 
 });
+
+sr.reveal('.card-projeto',{
+    duration: 4000, 
+});
+
+
+
+
 
 
 

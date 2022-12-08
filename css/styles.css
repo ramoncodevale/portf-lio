@@ -29,12 +29,13 @@ header {
   aligns-items: center;
 }
 
-.ul-1 {
+.ul-1  {
   display: flex;
   justify-content: space-around;
   list-style: none;
   margin-top: 15px;
 }
+
 
 .header-titulo {
   font-size: 1.5rem;
@@ -150,10 +151,14 @@ header {
   visibility: hidden;
 }
 
+.img-perfil {
+  display: flex;
+  justify-content: center;
+}
+
 .img-1 {
   width: 500px;
   height: 500px;
-  border-radius: 250px;
   margin-top: 70px;
   animation: bounce 1s infinite alternate;
   -webkit-animation: bounce 1s infinite alternate;
@@ -249,6 +254,13 @@ header {
   font-size: 20px;
 }
 
+.container-minha-foto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
 .minha-foto {
   width: 300px;
   height: 300px;
@@ -279,10 +291,14 @@ header {
 }
 
 .img-card {
-  width: 130px;
-  /* height: 150px; */
-
+  width: 120px;
   margin-top: 20px;
+  margin-left: 10px;
+}
+
+.img-card-js {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .card-habilidades {
@@ -293,7 +309,6 @@ header {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0 10px 30px #6d28d9;
 }
 
 .card-habilidades:hover {
@@ -336,8 +351,6 @@ header {
   margin-top: 30px;
 }
 
-
-
 .card-projeto {
   width: 300px;
   height: 250px;
@@ -347,7 +360,7 @@ header {
   margin-left: 30px;
 }
 
-.card-projeto, 
+.card-projeto,
 .titulo-do-projeto {
   visibility: hidden;
 }
@@ -356,7 +369,6 @@ header {
   box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px #6d28d9;
   background-color: #6d28d9;
 }
-
 
 .img-container {
   display: flex;
@@ -379,7 +391,7 @@ header {
   width: 150px;
   height: 30px;
   font-size: 16px;
-  background: #6d28d9;
+  background: #9333ea;
   color: #fff;
   cursor: pointer;
   border: 1px solid #fff;
@@ -392,25 +404,70 @@ header {
   border: 1px solid #fff;
 }
 
-
 /* Contatos */
 .container-contatos {
   margin-top: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .titulo-contatos {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  align-items: center;
-  margin-top: 100px;
+  margin-top: 250px;
 }
 
 .img-contatos {
   width: 400px;
   height: 400px;
   margin-top: 30px;
-  margin-left: 280px;
+}
+
+.buttons-contatos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-contatos {
+  width: 220px;
+  height: 50px;
+  cursor: pointer;
+  margin: 0 20px;
+  border-radius: 40px;
+  border: 1px solid #111;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #9333ea;
+}
+
+.btn-contatos:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px #6d28d9;
+  background-color: #111;
+  border: 2px solid #fff;
+}
+
+.btn-numero {
+  width: 220px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 40px;
+  border: 1px solid #111;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #9333ea;
+}
+
+.btn-numero:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px #6d28d9;
+  background-color: #111;
+  border: 2px solid #fff;
 }
 
 /* Footer */
@@ -420,4 +477,176 @@ header {
 
 .titulo-footer {
   font-size: 18px;
+  color: #9333ea;
+  text-align: center;
 }
+
+/* Smartphone */
+  @media screen and (max-width: 767px) {
+  header {
+   display: none;
+  }
+
+  .container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-1 {
+    margin-top: 10px;
+  }
+
+
+  .container-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .texto-sobre-mim {
+    text-align: center;
+  }
+
+  .minha-foto {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+  }
+
+  .titulo-habilidades {
+    text-align: center;
+  }
+
+  .habilidades-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+  .card-habilidades {
+    margin-top: 20px;
+  }
+
+  .container-projetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card-projeto {
+    margin-top: 30px;
+  }
+
+  .container-contatos {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons-contatos {
+    margin-top: 30px;
+  }
+
+  .titulo-contatos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  
+}
+
+ 
+/* Tablete */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-container {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .ul-1 {
+    display: none;
+  }
+
+  .container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .titulo-sobre-mim {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .container-2{
+    display: block;
+  }
+
+  .container-sobre-mim {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .texto-sobre-mim {
+   text-align: center;
+  }
+
+  .container-minha-foto {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .titulo-habilidades {
+    text-align: center;
+  }
+
+  .habilidades-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+  .card-habilidades {
+    margin-top: 20px;
+  }
+
+  .container-projetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card-projeto {
+    margin-top: 30px;
+  }
+
+  .container-contatos {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titulo-contatos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+  }
+} 
