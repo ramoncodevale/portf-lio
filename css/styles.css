@@ -247,7 +247,7 @@ header {
 }
 
 .texto-sobre-mim {
-  /* text-align: center; */
+  text-align: center;
   display: flex;
   justify-content: space-evenly;
   margin-top: 100px;
@@ -269,11 +269,38 @@ header {
   margin-bottom: 150px;
 }
 
-/* cards-habilidades */
+.container-curriculo {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+} 
 
+.btn-cv {
+  width: 200px;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #6d28d9;
+  box-shadow: 1px 1px 2px 2px #6d28d9;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn-cv:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.titulo-curriculo {
+  text-align: center;
+}
+
+/* cards-habilidades */
 .container-habilidades {
   bottom: 200px;
   height: 100vh;
+  margin-top: 150px;
 }
 
 .titulo-habilidades {
@@ -500,12 +527,14 @@ header {
 
   .container-sobre-mim {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
   }
 
-  
   .texto-sobre-mim {
+    display: flex;
+    justify-content: center;
     text-align: center;
   }
 
@@ -606,6 +635,8 @@ header {
    text-align: center;
   }
 
+
+
   .container-minha-foto {
     display: flex;
     justify-content: center;
@@ -623,7 +654,7 @@ header {
   }
 
   .card-habilidades {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .container-projetos {
