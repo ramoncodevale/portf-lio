@@ -10,20 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="logo">
+        <h2 class="logo-titulo"> < / >  Ramon </h2>
       </div>
-      <h2 class="header-titulo"> < / >  Ramon </h2>
-      <ul class="ul-1">
-        <li><a class="links"  href="#">Sobre mim</a></li>
-        <li><a class="links"  href="#">Habilidades</a></li>
-        <li><a class="links"  href="#">Projetos</a></li>
-        <li><a class="links"  href="#">Contatos</a></li>
-        <li><a href="links" href="#"><i class="fa-brands fa-square-github icon-github"></i></a></li>
-        <li><a href="links" href="#"><i class="fa-brands fa-linkedin icon-linkedin"></i></a></li>
-        <li><a href="links" href="#"><i class="fa-brands fa-square-whatsapp icon-whatsapp"></i></i></a></li>
-      </ul>
+      <nav class="nav-bar">
+        <a class="links"  href="#">Sobre mim</a>
+        <a class="links"  href="#">Habilidades</a>
+        <a class="links"  href="#">Projetos</a>
+        <a class="links"  href="#">Contatos</a>
+      </nav>
+      <div class="container-icon">
+      <div class="fa-solid fa-bars" id="menu-btn"></div>
+      </div>
     </header>
+
     <main>
       <div class="container-1">
         <div class="container-inicio">
@@ -36,10 +37,10 @@
           <h1 class="titulo-inicio" id="Elementel"> Olá Sou o Ramon</h1>
           <p class="paragrafo-desenvolvedor">Desenvolvedor Front End</p>
           <div class="btns-container">
-            <a href="https://github.com/ramoncodevale">
-              <button class="btn-1">Github <i id="logo-github" class="fa-brands fa-github"></i></button></a
+            <a href="https://github.com/ramoncodevale"  target="_blank">
+              <button class="btn-1">Github <i class="fa-brands fa-github"></i></button></a
               >
-              <a href="https://www.linkedin.com/in/ramon-valentim-3435541a8/">
+              <a href="https://www.linkedin.com/in/ramon-valentim-3435541a8/"  target="_blank">
                 <button class="btn-2">Linkedin <i class="fa-brands fa-linkedin"></i></button></a
                 >
               </div>
@@ -128,9 +129,14 @@
         <div class="container-5">
           <h1 class="titulo-contatos">Contatos</h1>
           <div class="container-contatos">
-          
-             <img class="img-contatos" src="./img/Mobile Marketing-bro.png">             
-      </div>
+            <div class="img-mobile-container">
+            <img class="img-contatos" src="./img/Mobile Marketing-bro.png">
+           </div>  
+            <div class="buttons-contatos">
+             <button class="btn-contatos">19 99414-5510</button>
+             <button class="btn-contatos">Entre em contato comigo!</button>
+            </div>           
+          </div>
     </main>
 
     
@@ -141,5 +147,6 @@
       </div>
     </footer>
      <script src="./js/script.js"></script>
+     <script src="./js/navbar.js"></script>
   </body>
 </html>

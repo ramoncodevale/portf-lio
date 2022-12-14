@@ -3,7 +3,7 @@ const check = document.getElementById('check');
 
 check.addEventListener('change', ()=>{
     document.body.classList.toggle('dark')
-    link.style.color = 'white'
+    links.style.color = 'white'
 })
 
 // Efeito Scroll
@@ -65,6 +65,9 @@ sr.reveal('.card-projeto',{
     duration: 4000, 
 });
 
+sr.reveal('.container-contatos',{
+    duration: 4000, 
+});
 
 
 
