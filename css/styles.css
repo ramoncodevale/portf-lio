@@ -292,7 +292,7 @@ body.dark {
 
 .habilidades-cards {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   justify-content: center;
   margin-top: 100px;
 }
@@ -486,6 +486,8 @@ body.dark {
 
 /* Footer */
 .container-footer {
+  display: flex;
+  justify-content: center;
   margin-top: 180px;
 }
 
@@ -494,6 +496,13 @@ body.dark {
   color: #9333ea;
   text-align: center;
 }
+
+.icons-footer {
+  display: flex;
+  justify-content: center;
+}
+
+
 
 /* Smartphone */
   @media screen and (max-width: 767px) {
