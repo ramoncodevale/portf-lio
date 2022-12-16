@@ -10,30 +10,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
+    <header id="header">
+      <div id="logo" class="logo-header">
         <h2 class="logo-titulo"> < / >  Ramon </h2>
       </div>
-      <nav class="nav-bar">
-        <a class="links"  href="#">Sobre mim</a>
-        <a class="links"  href="#">Habilidades</a>
-        <a class="links"  href="#">Projetos</a>
-        <a class="links"  href="#">Contatos</a>
+
+      <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+         <span id="hamburguer"></span>
+        </button>
+
+        <ul class="container-links" id="menu" role="menu">
+          <li><a href="#Sobre Mim" class="links">Sobre Mim</a></li>
+          <li><a href="#Habilidades" class="links">Habilidades</a></li>
+          <li><a href="#Projetos" class="links">Projetos</a></li>
+          <li><a href="#Contatos" class="links">Contatos</a></li>      
+          <input type="checkbox" class="checkbox" id="check">
+          <label class="label" for="check">
+           <a class="icons" href="#"></a><i class="fa-regular fa-moon"></i>
+           <a class="icons" href="#"></a></i><i class="fa-solid fa-sun"></i>
+           <div class="ball"></div>
+           </label>    
+        </ul>
+
       </nav>
-      <div class="container-icon">
-      <div class="fa-solid fa-bars" id="menu-btn"></div>
-      </div>
     </header>
 
     <main>
       <div class="container-1">
         <div class="container-inicio">
-          <input type="checkbox" class="checkbox" id="check">
-        <label class="label" for="check">
-         <a class="icons" href="#"></a><i class="fa-regular fa-moon"></i>
-         <a class="icons" href="#"></a></i><i class="fa-solid fa-sun"></i>
-         <div class="ball"></div>
-         </label>
           <h1 class="titulo-inicio" id="Elementel"> Olá Sou o Ramon</h1>
           <p class="paragrafo-desenvolvedor">Desenvolvedor Front End</p>
           <div class="btns-container">
@@ -48,9 +53,9 @@
             <img class="img-1" src="./img/Coding-bro (3).png" alt="foto perfil" />
       </div>
 
-      <div class="container-2">
+      <div class="container-2" id="Sobre Mim">
         <h1 class="titulo-sobre-mim">Sobre mim</h1>
-        <div class="container-sobre-mim">
+        <div class="container-sobre-mim" >
           <p class="texto-sobre-mim">
             Eu sou o Ramon tenho 22 anos, estou me especializando na linguagem 
             Javascript.<br/> 
@@ -74,7 +79,7 @@
       </div>
 
     
-      <div class="container-habilidades">
+      <div class="container-habilidades" id="Habilidades">
         <h1 class="titulo-habilidades">Habilidades</h1>
         <div class="habilidades-cards">
           <div class="card-habilidades">
@@ -97,7 +102,7 @@
 
       <div class="container-4">
         <h1 class="titulo-projetos">Projetos</h1>
-        <div class="container-projetos">
+        <div class="container-projetos" id="Projetos">
           <div class="card-projeto">
             <h3 class="titulo-do-projeto">iPhone</h3>
             <div class="img-container">
@@ -124,7 +129,7 @@
                 <img class="img-projeto-1" src="./img/web-site.png" />
                 </div>
                 <div class="button-container">
-                <button class="btn-projeto">Acessar ao Projeto</button>
+                <a href="https://tangerine-smakager-8931d6.netlify.app/" target="_blank"><button class="btn-projeto">Acessar ao Projeto</button></a>
                 </div>
               </div>
               </div>
@@ -141,8 +146,6 @@
             </div>           
           </div>
     </main>
-
-    
     
       <div class="container-footer">
         <h1 class="titulo-footer">Desenvolvido por Ramon Valentim </h1>
@@ -153,6 +156,6 @@
         <i class="fa-brands fa-whatsapp links"></i>
       </div>
      <script src="./js/script.js"></script>
-     <script src="./js/navbar.js"></script>
+     <script src="./js/nav.js"></script>
   </body>
 </html>

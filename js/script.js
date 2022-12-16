@@ -40,6 +40,10 @@ sr.reveal('.btn-2',{
     duration: 2000, 
 });
 
+sr.reveal('.container-habilidades',{
+    duration: 2000, 
+});
+
 sr.reveal('.-habilidades',{
     duration: 2000, 
 });
