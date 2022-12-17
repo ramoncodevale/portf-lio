@@ -7,79 +7,83 @@
     <title>Portfólio Ramon</title>
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header id="header">
       <div id="logo" class="logo-header">
-        <h2 class="logo-titulo"> < / >  Ramon </h2>
+        <h2 class="logo-titulo"> </>Ramon </h2>
+    </div>
+
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true"
+        aria-controls="menu" aria-expanded="false">Menu
+        <span id="hamburguer"></span>
+      </button>
+
+      <ul class="container-links" id="menu" role="menu">
+        <li><a href="#Sobre Mim" class="links">Sobre Mim</a></li>
+        <li><a href="#Habilidades" class="links">Habilidades</a></li>
+        <li><a href="#Projetos" class="links">Projetos</a></li>
+        <li><a href="#Contatos" class="links">Contatos</a></li>
+        <!-- Modo dark -->
+        <input type="checkbox" class="checkbox" id="check">
+        <label class="label" for="check">
+          <div class="ball"></div>
+          <a class="icons" href="#"></a><i class="fa-regular fa-moon"></i>
+          <a class="icons" href="#"></a><i class="fa-solid fa-sun"></i>
+        </label>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-1">
+      <div class="container-inicio">
+        <h1 class="titulo-inicio" id="Elementel"> Olá Sou o Ramon</h1>
+        <p class="paragrafo-desenvolvedor">Desenvolvedor Front End</p>
+        <div class="btns-container">
+          <a href="https://github.com/ramoncodevale" target="_blank">
+            <button class="btn-1">Github <i class="fa-brands fa-github"></i></button></a>
+          <a href="https://www.linkedin.com/in/ramon-valentim-3435541a8/"
+            target="_blank">
+            <button class="btn-2">Linkedin <i class="fa-brands fa-linkedin"></i></button></a>
+        </div>
       </div>
+      <img class="img-1" src="./img/Coding-bro (3).png" alt="foto perfil" />
+    </div>
 
-      <nav id="nav">
-        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
-         <span id="hamburguer"></span>
-        </button>
-
-        <ul class="container-links" id="menu" role="menu">
-          <li><a href="#Sobre Mim" class="links">Sobre Mim</a></li>
-          <li><a href="#Habilidades" class="links">Habilidades</a></li>
-          <li><a href="#Projetos" class="links">Projetos</a></li>
-          <li><a href="#Contatos" class="links">Contatos</a></li>      
-          <!-- Modo dark -->
-          <input type="checkbox" class="checkbox" id="check">
-          <label class="label" for="check">
-            <div class="ball"></div>
-           <a class="icons" href="#"></a><i class="fa-regular fa-moon"></i>
-           <a class="icons" href="#"></a></i><i class="fa-solid fa-sun"></i>
-           </label>    
-        </ul>
-
-      </nav>
-    </header>
-
-    <main>
-      <div class="container-1">
-        <div class="container-inicio">
-          <h1 class="titulo-inicio" id="Elementel"> Olá Sou o Ramon</h1>
-          <p class="paragrafo-desenvolvedor">Desenvolvedor Front End</p>
-          <div class="btns-container">
-            <a href="https://github.com/ramoncodevale"  target="_blank">
-              <button class="btn-1">Github <i class="fa-brands fa-github"></i></button></a
-              >
-              <a href="https://www.linkedin.com/in/ramon-valentim-3435541a8/"  target="_blank">
-                <button class="btn-2">Linkedin <i class="fa-brands fa-linkedin"></i></button></a
-                >
-              </div>
-            </div>
-            <img class="img-1" src="./img/Coding-bro (3).png" alt="foto perfil" />
-      </div>
-
-      <div class="container-2" id="Sobre Mim">
-        <h1 class="titulo-sobre-mim">Sobre mim</h1>
-        <div class="container-sobre-mim" >
-          <p class="texto-sobre-mim">
-            Eu sou o Ramon tenho 22 anos, estou me especializando na linguagem 
-            Javascript.<br/> 
+    <div class="container-2" id="Sobre Mim">
+      <h1 class="titulo-sobre-mim">Sobre mim</h1>
+      <div class="container-sobre-mim">
+        <p class="texto-sobre-mim">
+          Eu sou o Ramon tenho 22 anos, estou me especializando na linguagem
+          Javascript.<br/>
             Estou disposto a crescer profissionalmente, com muita dedicação
             e sempre buscando conhecimento
-            na área de programação que estou gostando bastante e  busco evoluir acada dia, 
-            e estou me desafiando para crescer na área para me tornar um grande profissional e 
-           estou procurando oportunidades para adquirir experiência.
+            na área de programação que estou gostando bastante e busco evoluir
+            acada dia,
+            e estou me desafiando para crescer na área para me tornar um grande
+            profissional e
+            estou procurando oportunidades para adquirir experiência.
           </p>
           <div class="container-minha-foto">
-          <img class="minha-foto" src="./img/minha-foto.png" alt="minha foto" />
+            <img class="minha-foto" src="./img/minha-foto.png" alt="minha foto"
+              />
           </div>
         </div>
       </div>
-      
-      <h1 class="titulo-curriculo">Currículo</h1>
+      <h1 class="titulo-curriculo">Curriculo</h1>
       <div class="container-curriculo">
-      <div class="botao-cv">
-     <a href="./img/curriculo.pdf" target="_blank" class="link-cv"><button class="btn-cv">Acessar Currículo</button></a>
-      </div>
+        <div class="botao-cv">
+          <a href="./img/curriculo.pdf" target="_blank" class="link-cv"><button
+              class="btn-cv">Acessar Curriculo</button></a>
+        </div>
       </div>
 
-    
       <div class="container-habilidades" id="Habilidades">
         <h1 class="titulo-habilidades">Habilidades</h1>
         <div class="habilidades-cards">
@@ -96,7 +100,9 @@
             <img class="img-card" src="./img/figma.png" alt="Icone Figma">
           </div>
           <div class="card-habilidades">
-            <img class="img-card" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Icone Git" />
+            <img class="img-card"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Icone Git" />
           </div>
         </div>
       </div>
@@ -113,50 +119,54 @@
               <button class="btn-projeto">Acessar ao Projeto</button>
             </div>
           </div>
-          
+
           <div class="card-projeto">
             <h3 class="titulo-do-projeto">Nike Shoes</h3>
             <div class="img-container">
               <img class="img-projeto-1" src="./img/nike Projeto.png" />
-              </div>
-              <div class="button-container">
-              <button class="btn-projeto">Acessar ao Projeto</button>
-              </div>
             </div>
+            <div class="button-container">
+              <button class="btn-projeto">Acessar ao Projeto</button>
+            </div>
+          </div>
 
-            <div class="card-projeto">
-              <h3 class="titulo-do-projeto">Web Site</h3>
-              <div class="img-container">
-                <img class="img-projeto-1" src="./img/web-site.png" />
-                </div>
-                <div class="button-container">
-                <a href="https://tangerine-smakager-8931d6.netlify.app/" target="_blank"><button class="btn-projeto">Acessar ao Projeto</button></a>
-                </div>
-              </div>
-              </div>
-              
+          <div class="card-projeto">
+            <h3 class="titulo-do-projeto">Web Site</h3>
+            <div class="img-container">
+              <img class="img-projeto-1" src="./img/web-site.png" />
+            </div>
+            <div class="button-container">
+              <a href="https://chipper-cassata-dc9e2d.netlify.app/"
+                target="_blank"><button class="btn-projeto">Acessar ao Projeto</button></a>
+            </div>
+          </div>
+        </div>
+
         <div class="container-5">
           <h1 class="titulo-contatos">Contatos</h1>
           <div class="container-contatos">
             <div class="img-mobile-container">
-            <img class="img-contatos" src="./img/Mobile Marketing-bro.png">
-           </div>  
+              <img class="img-contatos" src="./img/Mobile Marketing-bro.png">
+            </div>
             <div class="buttons-contatos">
-             <button class="btn-contatos">19 99414-5510 <i class="fa-brands fa-whatsapp"></i></button>
-             <button class="btn-contatos">Entre em contato comigo!</button>
-            </div>           
-          </div>
-    </main>
-    
-      <div class="container-footer">
-        <h1 class="titulo-footer">Desenvolvido por Ramon Valentim </h1>
-      </div>
-      <div class="icons-footer">
-        <i class="fa-brands fa-github links"></i>
-        <i class="fa-brands fa-linkedin links"></i>
-        <i class="fa-brands fa-whatsapp links"></i>
-      </div>
-     <script src="./js/script.js"></script>
-     <script src="./js/nav.js"></script>
-  </body>
-</html>
+              <button class="btn-contatos">19 99414-5510 <i class="fa-brands
+                  fa-whatsapp"></i></button>
+              <button class="btn-contatos">Entre em contato comigo!</button>
+            </div>
+          </main>
+
+          <footer>
+            <div class="container-footer">
+              <h1 class="titulo-footer">Desenvolvido por Ramon Valentim </h1>
+            </div>
+            <div class="icons-footer">
+              <i class="fa-brands fa-github links"></i>
+              <i class="fa-brands fa-linkedin links"></i>
+              <i class="fa-brands fa-whatsapp links"></i>
+            </div>
+
+
+            <script src="./js/script.js"></script>
+            <script src="./js/nav.js"></script>
+          </body>
+        </html>
