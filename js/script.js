@@ -17,18 +17,13 @@ sr.reveal('.paragrafo-desenvolvedor',{
     duration: 2000
 });
 
-sr.reveal('.minha-foto',{
-    rotate: { x: 100, y: 100, z:0},
-    duration: 2000, 
-});
-
 sr.reveal('.titulo-sobre-mim',{
-    duration: 2000, 
+    duration: 1000, 
 });
 
 
 sr.reveal('.texto-sobre-mim',{
-    duration: 3000, 
+    duration: 1000, 
 });
 
 sr.reveal('.btn-1',{
@@ -41,11 +36,7 @@ sr.reveal('.btn-2',{
 });
 
 sr.reveal('.container-habilidades',{
-    duration: 2000, 
-});
-
-sr.reveal('.-habilidades',{
-    duration: 2000, 
+    duration: 1000, 
 });
 
 sr.reveal('.titulo-habilidades',{

@@ -139,7 +139,6 @@ nav {
 
 .titulo-inicio,
 .paragrafo-desenvolvedor,
-.minha-foto,
 .titulo-sobre-mim,
 .texto-sobre-mim {
   visibility: hidden;
@@ -519,15 +518,12 @@ nav {
 /* Smartphone */
 @media screen and (max-width: 767px) {
   #menu {
-    /* display: none; */
     display: block;
     position: absolute;
     width: 100%;
-    /* background: ; */
     transition: .6s;
     z-index: 1000;
     top: 70px;
-    right: 0;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
@@ -541,6 +537,7 @@ nav {
 
   #menu .links {
     padding: 1rem 0;
+    left: 0;
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, .05);
   }
@@ -551,6 +548,7 @@ nav {
     font-size: 1rem;
     border: none;
     background: none;
+    color: #9333ea;
     cursor: pointer;
     gap: .5rem;
   }
@@ -559,7 +557,6 @@ nav {
     border-top: 2px solid;
     width: 20px;
     color: #9333ea;
-
   }
 
   #hamburguer::after, #hamburguer::before {
@@ -588,12 +585,17 @@ nav {
 
   .container-links {
     align-items: center;
+    padding-top: 20px;
   }
 
   .label {
-    display: flex;
-    margin-top: 30px;
+    width:55px;
+    margin-top:30px;
     align-items:center;
+  }
+
+  .ball {
+    width: 25px;
   }
 
   .container-1 {
@@ -603,6 +605,8 @@ nav {
   }
 
   .img-1 {
+    width: 300px;
+    height:300px;
     margin-top: 10px;
   }
 
@@ -616,6 +620,12 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
+  }
+
+  .container-minha-foto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .minha-foto {
@@ -638,10 +648,17 @@ nav {
     margin-top: 20px;
   }
 
+
   .container-projetos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .card-projeto {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
   }
 
   .card-projeto {
@@ -651,13 +668,18 @@ nav {
   .container-contatos {
     margin-top: 100px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    flex-direction:column;
   }
 
   .buttons-contatos {
-    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+  }
+
+  .btn-contatos {
+    margin-top: 20px;
   }
 
   .titulo-contatos {
@@ -670,16 +692,85 @@ nav {
 
 /* Tablete */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .header-container {
-    display: none;
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    transition: .6s;
+    z-index: 1000;
+    top: 70px;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
   }
 
-  .logo {
-    display: none;
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
   }
 
-  .ul-1 {
-    display: none;
+  #menu .links {
+    padding: 1rem 0;
+    left: 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    color: #9333ea;
+    cursor: pointer;
+    gap: .5rem;
+  }
+
+  #hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+    color: #9333ea;
+  }
+
+  #hamburguer::after, #hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #9333ea;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before {
+   transform: rotate(135deg);
+  }
+
+  #nav.active #hamburguer::after {
+   transform: rotate(-135deg);
+   top: -7px;
+  }
+
+  .container-links {
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .label {
+    width:55px;
+    margin-top:30px;
+    align-items:center;
+  }
+
+  .ball {
+    width: 25px;
   }
 
   .container-1 {
@@ -741,11 +832,18 @@ nav {
     margin-top: 30px;
   }
 
-  .container-contatos {
+  /* .container-contatos {
     margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+  } */
+
+  .container-contatos {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
   }
 
   .titulo-contatos {
@@ -753,5 +851,15 @@ nav {
     justify-content: center;
     text-align: center;
     margin-top: 100px;
+  }
+
+  .buttons-contatos {
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+  }
+
+  .btn-contatos {
+    margin-top: 20px;
   }
 }
