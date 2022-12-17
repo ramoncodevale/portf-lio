@@ -56,9 +56,6 @@ sr.reveal('.titulo-projeto',{
     duration: 3000, 
 });
 
-sr.reveal('.card-projeto',{
-    duration: 4000, 
-});
 
 sr.reveal('.container-contatos',{
     duration: 4000, 

@@ -380,10 +380,10 @@ nav {
   margin-left: 30px;
 }
 
-.card-projeto,
+/* .card-projeto,
 .titulo-do-projeto {
   visibility: hidden;
-}
+} */
 .card-projeto:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px #6d28d9;
@@ -647,22 +647,22 @@ nav {
     margin-top: 20px;
   }
 
-
   .container-projetos {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .card-projeto {
     display: grid;
-    grid-template-columns: auto auto auto;
     justify-content: center;
   }
 
   .card-projeto {
     margin-top: 30px;
   }
+
 
   .container-contatos {
     margin-top: 100px;
