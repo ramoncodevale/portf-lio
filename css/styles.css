@@ -137,13 +137,6 @@ nav {
   margin-top: 10px;
 }
 
-.titulo-inicio,
-.paragrafo-desenvolvedor,
-.titulo-sobre-mim,
-.texto-sobre-mim {
-  visibility: hidden;
-}
-
 .img-perfil {
   display: flex;
   justify-content: center;
@@ -201,11 +194,6 @@ nav {
   cursor: pointer;
   margin-top: 20px;
   font-size: 1.2rem;
-}
-
-.btn-1,
-.btn-2 {
-  visibility: hidden;
 }
 
 .btn-1:hover {
@@ -337,13 +325,6 @@ nav {
   transform: scale(1.05);
 }
 
-.container-habilidades,
-.titulo-habilidades,
-.card-habilidades,
-.container-contatos {
-  visibility: hidden;
-}
-
 /* cards-projetos */
 
 .container-4 {
@@ -380,10 +361,6 @@ nav {
   margin-left: 30px;
 }
 
-/* .card-projeto,
-.titulo-do-projeto {
-  visibility: hidden;
-} */
 .card-projeto:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px #6d28d9;
