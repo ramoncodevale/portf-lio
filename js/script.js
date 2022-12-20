@@ -1,13 +1,11 @@
 // Modo Dark 
-const check = document.getElementById('check');
+const checkbox =
+ document.getElementById('checkbox');
 
-check.addEventListener('change', ()=>{
-    document.body.classList.toggle('dark')
-    links.style.color = 'white'
-})
-
-
-
+ checkbox.addEventListener('change', () => {
+  // change the theme   
+  document.body.classList.toggle('dark');
+ });
 
 
 
