@@ -240,18 +240,11 @@ body.dark {
   font-size: 20px;
 }
 
-.container-minha-foto {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 80px;
-}
-
 .minha-foto {
   width: 300px;
   height: 300px;
-  margin-left: 200px;
-  margin-bottom: 150px;
+  /* margin-left: 200px; */
+  /* margin-bottom: 150px; */
 }
 
 /*  Curriculo */
@@ -616,22 +609,20 @@ body.dark {
   }
 
   .container-sobre-mim {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    display: block;
+    align-items: center;
   }
 
   .texto-sobre-mim {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
+    margin-top: 30px;
   }
 
-  .container-minha-foto {
+  /* .container-minha-foto {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
+  } */
 
   .minha-foto {
     width: 200px;
@@ -658,6 +649,7 @@ body.dark {
     grid-template-columns: auto;
     justify-content: center;
     flex-direction: column;
+    margin-top: 30px;
   }
 
   .card-projeto {
@@ -677,6 +669,11 @@ body.dark {
     flex-direction:column;
   }
 
+  .img-contatos {
+    width: 300px;
+    height: 300px;
+  }
+
   .buttons-contatos {
     display: flex;
     justify-content: center;
@@ -684,6 +681,8 @@ body.dark {
   }
 
   .btn-contatos {
+    width: 200px;
+    height: 50px;
     margin-top: 20px;
   }
 
