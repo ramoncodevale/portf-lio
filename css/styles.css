@@ -235,8 +235,8 @@ body.dark {
   justify-content: center;
   text-align: center;
   align-items: center;
-  width: 450px;
   font-size: 20px;
+  width: 200px;
 }
 
 .minha-foto {
@@ -484,7 +484,7 @@ body.dark {
 
 .titulo-footer {
   font-size: 18px;
-  color: #9333ea;
+  color: #047857;
   text-align: center;
 }
 
@@ -542,7 +542,7 @@ body.dark {
     display: block;
     width: 20px;
     height: 2px;
-    background-color: #9333ea;
+    background-color: #047857;
     margin-top: 5px;
     transition: .3s;
     position: relative;
@@ -568,7 +568,6 @@ body.dark {
   }
 
   .label {
-    background-color: #9333ea;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -614,20 +613,22 @@ body.dark {
   }
 
   .texto-sobre-mim {
+    flex-direction-column: center;
     align-items: center;
     margin-top: 30px;
   }
 
-  /* .container-minha-foto {
+  .container-minha-foto {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  } */
+    margin-top: 50px;
+
+  }
 
   .minha-foto {
     width: 200px;
     height: 200px;
-    margin-top: 30px;
   }
 
   .titulo-habilidades {
@@ -658,9 +659,22 @@ body.dark {
   }
 
   .card-projeto {
+    width: 300px;
+    height: 300px;
     margin-top: 30px;
   }
 
+  .img-projeto-1 {
+    width: 200px;
+    height: 100px;
+  }
+
+
+  .btn-projeto {
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+  }
 
   .container-contatos {
     margin-top: 100px;
@@ -727,7 +741,6 @@ body.dark {
     font-size: 1rem;
     border: none;
     background: none;
-    color: #9333ea;
     cursor: pointer;
     gap: .5rem;
   }
@@ -735,7 +748,6 @@ body.dark {
   #hamburguer {
     border-top: 2px solid;
     width: 20px;
-    color: #9333ea;
   }
 
   #hamburguer::after, #hamburguer::before {
@@ -743,7 +755,6 @@ body.dark {
     display: block;
     width: 20px;
     height: 2px;
-    background-color: #9333ea;
     margin-top: 5px;
     transition: .3s;
     position: relative;
@@ -773,7 +784,6 @@ body.dark {
   }
   
   .label {
-    background-color: #9333ea;
     display: flex;
     align-items: center;
     justify-content: space-between;
