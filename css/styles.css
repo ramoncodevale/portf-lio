@@ -206,41 +206,35 @@ body.dark {
 /* Container-sobre-mim */
 .section-sobre-mim {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-}
-
-.container-2 {
-  margin-top: 200px;
 }
 
 .container-sobre-mim {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin-left: 350px; */
+  margin-top: 200px;
 }
 
-.titulo-sobre-mim {
+.sobre-titulo {
   display: flex;
   justify-content: center;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 30px;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.sobre-imagem-texto {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .texto-sobre-mim {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  font-size: 20px;
-  width: 200px;
+  color: var(--color-text);
+  margin-top: 50px;
+  width: 45%;
+  font-size: 22px;
 }
 
 .minha-foto {
   width: 300px;
-  height: 300px;
 }
 
 /*  Curriculo */
@@ -492,7 +486,7 @@ body.dark {
 }
 
 /* Smartphone */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #menu {
     display: block;
     position: absolute;
@@ -605,27 +599,24 @@ body.dark {
     margin-top: 10px;
   }
 
-  .container-sobre-mim {
+  .sobre-imagem-texto {
     display: block;
-    align-items: center;
-  }
-
-  .texto-sobre-mim {
-    flex-direction-column: center;
-    align-items: center;
-    margin-top: 30px;
   }
 
   .container-minha-foto {
-    display: flex;
+    display: grid;
     justify-content: center;
-    flex-direction: column;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
-  .minha-foto {
-    width: 200px;
-    height: 200px;
+  .minh-foto {
+    margin: auto;
+    width: 300px;
+  }
+
+  .texto-sobre-mim {
+    width: 90%;
+    margin-left: 20px;
   }
 
   .titulo-habilidades {
@@ -818,28 +809,24 @@ body.dark {
     justify-content: center;
   }
 
-  .titulo-sobre-mim {
-    display: flex;
-    justify-content: center;
-  }
-
-  .container-2 {
+  .sobre-imagem-texto {
     display: block;
   }
 
-  .container-sobre-mim {
-    display: flex;
-    flex-direction: column;
+  .container-minha-foto {
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .minh-foto {
+    margin: auto;
+    width: 300px;
   }
 
   .texto-sobre-mim {
-    text-align: center;
-  }
-
-  .container-minha-foto {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+    width: 90%;
+    margin-left: 20px;
   }
 
   .titulo-habilidades {
@@ -859,7 +846,7 @@ body.dark {
   .container-projetos {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
   }
 
   .card-projeto {
