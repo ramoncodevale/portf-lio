@@ -95,7 +95,7 @@ body.dark {
   transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .label .ball{
+.checkbox:checked + .label .ball {
   transform: translateX(36px);
 }
 
@@ -113,7 +113,7 @@ body.dark {
 .container-1 {
   display: flex;
   justify-content: space-evenly;
-} 
+}
 
 .titulo-inicio {
   font-size: 42px;
@@ -203,7 +203,6 @@ body.dark {
   transform: scale(1.1);
 }
 
-
 /* Container-sobre-mim */
 .section-sobre-mim {
   display: flex;
@@ -242,7 +241,6 @@ body.dark {
 .minha-foto {
   width: 300px;
   height: 300px;
-
 }
 
 /*  Curriculo */
@@ -280,7 +278,7 @@ body.dark {
 }
 
 /* cards-habilidades */
-.section-habilidades{
+.section-habilidades {
   margin-top: 250px;
 }
 
@@ -499,7 +497,7 @@ body.dark {
     display: block;
     position: absolute;
     width: 100%;
-    transition: .6s;
+    transition: 0.6s;
     z-index: 1000;
     top: 70px;
     height: 0px;
@@ -517,18 +515,18 @@ body.dark {
     padding: 1rem 0;
     left: 0;
     margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, .05);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   }
 
   #btn-mobile {
     display: flex;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     border: none;
     background: none;
     color: #047857;
     cursor: pointer;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   #hamburguer {
@@ -537,14 +535,15 @@ body.dark {
     color: #047857;
   }
 
-  #hamburguer::after, #hamburguer::before {
-    content: '';
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
     display: block;
     width: 20px;
     height: 2px;
     background-color: #047857;
     margin-top: 5px;
-    transition: .3s;
+    transition: 0.3s;
     position: relative;
   }
 
@@ -553,18 +552,17 @@ body.dark {
   }
 
   #nav.active #hamburguer::before {
-   transform: rotate(135deg);
+    transform: rotate(135deg);
   }
 
   #nav.active #hamburguer::after {
-   transform: rotate(-135deg);
-   top: -7px;
+    transform: rotate(-135deg);
+    top: -7px;
   }
 
   .container-links {
     align-items: center;
     padding-top: 20px;
-  
   }
 
   .label {
@@ -579,7 +577,7 @@ body.dark {
     transform: scale(1.1);
     margin-top: 30px;
   }
-  
+
   .ball {
     background-color: #fff;
     border-radius: 50%;
@@ -590,8 +588,8 @@ body.dark {
     left: 2px;
     transition: transform 0.2s linear;
   }
-  
-  .checkbox:checked + .label .ball{
+
+  .checkbox:checked + .label .ball {
     transform: translateX(36px);
   }
 
@@ -603,7 +601,7 @@ body.dark {
 
   .img-1 {
     width: 300px;
-    height:300px;
+    height: 300px;
     margin-top: 10px;
   }
 
@@ -623,7 +621,6 @@ body.dark {
     justify-content: center;
     flex-direction: column;
     margin-top: 50px;
-
   }
 
   .minha-foto {
@@ -669,7 +666,6 @@ body.dark {
     height: 100px;
   }
 
-
   .btn-projeto {
     width: 200px;
     height: 30px;
@@ -680,7 +676,7 @@ body.dark {
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
   }
 
   .img-contatos {
@@ -691,7 +687,7 @@ body.dark {
   .buttons-contatos {
     display: flex;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
   }
 
   .btn-contatos {
@@ -714,7 +710,7 @@ body.dark {
     display: block;
     position: absolute;
     width: 100%;
-    transition: .6s;
+    transition: 0.6s;
     z-index: 1000;
     top: 70px;
     height: 0px;
@@ -732,17 +728,17 @@ body.dark {
     padding: 1rem 0;
     left: 0;
     margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, .05);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   }
 
   #btn-mobile {
     display: flex;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     border: none;
     background: none;
     cursor: pointer;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   #hamburguer {
@@ -750,13 +746,14 @@ body.dark {
     width: 20px;
   }
 
-  #hamburguer::after, #hamburguer::before {
-    content: '';
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
     display: block;
     width: 20px;
     height: 2px;
     margin-top: 5px;
-    transition: .3s;
+    transition: 0.3s;
     position: relative;
   }
 
@@ -765,12 +762,12 @@ body.dark {
   }
 
   #nav.active #hamburguer::before {
-   transform: rotate(135deg);
+    transform: rotate(135deg);
   }
 
   #nav.active #hamburguer::after {
-   transform: rotate(-135deg);
-   top: -7px;
+    transform: rotate(-135deg);
+    top: -7px;
   }
 
   .container-links {
@@ -782,7 +779,7 @@ body.dark {
     opacity: 0;
     position: absolute;
   }
-  
+
   .label {
     display: flex;
     align-items: center;
@@ -794,7 +791,7 @@ body.dark {
     width: 50px;
     transform: scale(1.5);
   }
-  
+
   .ball {
     background-color: #fff;
     border-radius: 50%;
@@ -805,8 +802,8 @@ body.dark {
     left: 2px;
     transition: transform 0.2s linear;
   }
-  
-  .checkbox:checked + .label .ball{
+
+  .checkbox:checked + .label .ball {
     transform: translateX(36px);
   }
 
@@ -866,7 +863,25 @@ body.dark {
   }
 
   .card-projeto {
+    display: grid;
+    justify-content: center;
+  }
+
+  .card-projeto {
+    width: 300px;
+    height: 300px;
     margin-top: 30px;
+  }
+
+  .img-projeto-1 {
+    width: 200px;
+    height: 100px;
+  }
+
+  .btn-projeto {
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
   }
 
   .container-contatos {
@@ -880,7 +895,7 @@ body.dark {
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
   }
 
   .titulo-contatos {
@@ -893,7 +908,7 @@ body.dark {
   .buttons-contatos {
     display: flex;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
   }
 
   .btn-contatos {
