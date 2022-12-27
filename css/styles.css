@@ -269,6 +269,7 @@ body.dark {
 
 .titulo-curriculo {
   text-align: center;
+  font-size: 40px;
 }
 
 /* cards-habilidades */
@@ -279,6 +280,7 @@ body.dark {
 .titulo-habilidades {
   display: flex;
   margin-top: 30px;
+  font-size: 40px;
   font-weight: 700;
   justify-content: center;
 }
@@ -306,7 +308,6 @@ body.dark {
   margin-left: 30px;
   background-color: #047857;
   border: 1px solid #fff;
-  /* box-shadow: 4px 2px 2px 2px ; */
   position: relative;
   overflow: hidden;
   border-radius: 20px;
@@ -320,11 +321,6 @@ body.dark {
 }
 
 /* cards-projetos */
-
-.container-4 {
-  /* height: 100px; */
-}
-
 .container-projetos {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -336,6 +332,8 @@ body.dark {
   display: flex;
   justify-content: center;
   margin-top: 250px;
+  font-size: 40px;
+
 }
 
 .titulo-do-projeto {
@@ -408,6 +406,7 @@ body.dark {
   display: flex;
   justify-content: center;
   text-align: center;
+  font-size: 40px;
   margin-top: 250px;
 }
 
