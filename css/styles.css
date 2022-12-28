@@ -15,6 +15,7 @@ body {
 
 /* Header */
 #header {
+  background-color: #047857;
   border-bottom: 1px solid #047857;
   height: 56px;
   width: 100%;
@@ -24,9 +25,15 @@ body {
   aligns-items: center;
 }
 
+.links-header {
+  text-decoration: none;
+  padding: 40px;
+  color: #fff;
+}
+
 .logo-titulo {
   font-size: 1.3rem;
-  color: #047857;
+  color: #fff;
   margin-top: 15px;
 }
 
@@ -72,7 +79,7 @@ body.dark {
 }
 
 .label {
-  background-color: #047857;
+  background-color: #000000;
   display: flex;
   align-items: center;
   justify-content: space-between;
