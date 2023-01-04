@@ -11,7 +11,7 @@
   --background-color: #fff;
   --color-text: #a1a1aa;
   --color-secondary: #ea580c;
-  --background-card: #111827;
+  --background-card: #262626;
   --background-color-dark: #000000;
   --color-text-dark: #fff;
   --color-secondary-dark: #d97706; 
@@ -304,7 +304,7 @@ body.dark {
   width: 140px;
   margin-left: 30px;
   background-color: var(--background-card);
-  border: 2px solid var(--color-secondary);
+  border: 3px solid var(--color-secondary);
   border-radius: 20px;
 }
 
@@ -340,18 +340,18 @@ body.dark {
 }
 
 .card-projeto {
-  width: 300px;
-  height: 250px;
-  border-radius: 10px;
-  background-color: var(--color-secondary);
-  border: 1px solid var(--color-text-dark);
+  width: 400px;
+  height: 350px;
+  border-radius: 50px;
+  background-color: var(--background-card);
+  border: 3px solid var(--color-secondary);
   margin-left: 30px;
 }
 
 .card-projeto:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px var(--color-secondary);
-  background-color: var(--background-card);
+  background-color: var(--background-color-dark);
   border: 1px solid var(--color-text-dark);
 }
 
@@ -361,8 +361,8 @@ body.dark {
 }
 
 .img-projeto-1 {
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   margin-top: 30px;
 }
 
@@ -374,10 +374,10 @@ body.dark {
 
 .btn-projeto {
   width: 220px;
-  height: 30px;
-  font-size: 16px;
-  border-radius: 30px;
-  background: var(--background-color-dark);
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50px;
+  background: var(--color-secondary);
   color: var(--color-text-dark);
   cursor: pointer;
   border: 3px solid var(--color-text-dark);
@@ -385,7 +385,7 @@ body.dark {
 }
 
 .btn-projeto:hover {
-  background: var(--color-secondary);
+  background: var(--color-secondary-dark);
   color: var(--color-text-dark);
   border: 1px solid var(--color-text-dark);
 }
