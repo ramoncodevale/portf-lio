@@ -531,8 +531,8 @@ li {
   }
 
   .img-1 {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     margin-top: 10px;
   }
 
@@ -547,7 +547,7 @@ li {
   }
 
   .minh-foto {
-    width: 300px;
+    width: 100px;
   }
 
   .texto-sobre-mim {
